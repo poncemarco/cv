@@ -1,96 +1,83 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title> Marco Ponce: Sitio personal </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+  <title>Sidebar Example</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-  <table cellspacing="20">
-    <tr>
-      <td><img src="images/profile_photo_circled.png" alt="Marco profile photo"></td>
-      <td><h1> Marco Ponce </h1>
-      <p><em>Ingeniero en <stron>Energías Renovables.</stron></em></p>
-      <p>Soy un ingeniero en Energías Renovables recibido por la Universidad
-        Autónoma de méxico.<br> Actualmente, soy un Operador de un Huerto Solar con
-         capacidad instalada de 3 MW. Me gusta mucho el café (:</p></td>
-    </tr>
-  </table>
+  <div class="wrapper">
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <img src="images/profile_photo_circled.png">
+        <h3>Ing. Marco Ponce</h3>
+        <div class="social-container">
+          <a href="https://github.com/" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="mailto:example@gmail.com" class="social-icon">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://wa.me/1234567890" target="_blank" class="social-icon">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https:linkei" target="_blank" class="social-icon">
+            <i class="fab fa-linkdin"></i>
+          </a>
 
+        </div>
+      </div>
+      <ul class="list-unstyled components">
+        <li>
+          <a href="#"><i class="fas fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-user"></i>About</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-list"></i>Services</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-file"></i>Portfolio</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-address-card"></i></i>Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="content">
+      <button type="button" id="sidebarCollapse" class="btn btn-info d-block d-md-none">
+        <i class="fa fa-bars"></i>
+        <span>Toggle Sidebar</span>
+      </button>
+      <section id="home">
+        <div class="content-placeholder" >
+          <img src="images/hero.jpg" class="background-image">
+          <h1 class="up-text presentation">Hola!</h1>
+          <h2 id="changingText" class="centered-text presentation">Soy un desarrollador</h>
+        </div>
+      </section>
+    </div>
+    
+  </div>
+  
+  
 
-<hr>
-<h3>Educación</h3>
-<table cellspacing="15">
-  <thead>
-    <tr>
-      <th>Fecha</th>
-      <th>Escuelas</th>
-    </tr>
-  </thead>
-  <tbody>
-
-  </tbody>
-  <tfoot>
-
-  </tfoot>
-  <tr>
-    <td>2014-2017</td>
-    <td>Preparatoria No. 6 Antonio Caso</td>
-  </tr>
-  <tr>
-    <td>2017-2021</td>
-    <td>Instituto de Energías Renovables <br> Titulo recibido con
-      mención honorífica:<br> <strong>Ingeniero en Energías Renovables</strong></td>
-  </tr>
-</table>
-
-<hr>
-<h3>Experiencia</h3>
-<ul>
-  <li>Operador de Huerto Solar</li>
-  <li>Becario como Analista y Diseñador de Redes Eléctricas</li>
-  <li>Tecnico de Inversores Eólicos/Fotovoltaicos</li>
-</ul>
-<hr>
-<h3>Hobbies</h3>
-<ul>
-  <li>Programming</li>
-  <li>Volleyball</li>
-  <li>Reading</li>
-</ul>
-<table>
-  <tr>
-    <td></td>
-  </tr>
-  <tr>
-
-  </tr>
-</table>
-<hr>
-
-<h3>Habilidades</h3>
-<table cellspacing="10">
-  <tr>
-    <td>Python</td>
-    <td> ⭐⭐⭐⭐</td>
-    <td>Matlab</td>
-    <td>⭐⭐⭐</td>
-  </tr>
-  <tr>
-    <td>OpenFoam</td>
-    <td>⭐⭐⭐</td>
-    <td>C++</td>
-    <td>⭐⭐⭐</td>
-  </tr>
-</table>
-
-<hr>
-<a href="socialmedia.html">Datos de contacto</a>
-
-
-
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/index.js"></script>
 </body>
 
 </html>
