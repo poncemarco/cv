@@ -8,7 +8,7 @@ $(document).ready(function () {
     });
   });
   const changingText = document.getElementById("changingText");
-const texts = ["Soy un desarrollador", "Soy un diseñador"];
+const texts = ["Developer.", "Web Designer."];
 let textIndex = 0;
 let letterIndex = 0;
 let isDeleting = false;
