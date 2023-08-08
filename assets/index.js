@@ -1,13 +1,4 @@
-$(document).ready(function () {
-    if ($(window).width() <= 767) {
-      $('#sidebar').addClass('active');
-    }
-  
-    $('#sidebarCollapse').on('click', function () {
-      $('#sidebar').toggleClass('active');
-    });
-  });
-  const changingText = document.getElementById("changingText");
+const changingText = document.getElementById("changingText");
 const texts = ["Developer.", "Web Designer."];
 let textIndex = 0;
 let letterIndex = 0;
@@ -37,4 +28,9 @@ function changeText() {
 
 changeText();
 
-  
+$(document).ready(function () {
+  $('#sidebarCollapse').on('click', function () {
+    $('#sidebar').toggleClass('active');
+  });
+});
+

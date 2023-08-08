@@ -36,7 +36,6 @@
           <a href="https:linkei" target="_blank" class="social-icon">
             <i class="fab fa-linkdin"></i>
           </a>
-
         </div>
       </div>
       <ul class="list-unstyled components">
@@ -53,12 +52,14 @@
           <a href="#"><i class="fas fa-file"></i>Portfolio</a>
         </li>
         <li>
-          <a href="#"><i class="fa-solid fa-address-card"></i></i>Contact</a>
+          <a href="#"><i class="fas fa-comments"></i></i>Contact</a>
         </li>
       </ul>
     </nav>
+
     <div id="content">
-      <button type="button" id="sidebarCollapse" class="btn btn-info d-block d-md-none">
+      <button type="button" id="sidebarCollapse" class="btn btn-info d-block floating-toggle" data-toggle="collapse"
+        data-target="#sidebar" aria-expanded="false" aria-label="Toggle filters">
         <i class="fa fa-bars"></i>
         <span>Toggle Sidebar</span>
       </button>
@@ -66,7 +67,7 @@
         <div class="content-placeholder">
           <img src="images/hero.jpg" class="background-image">
           <h1 class="presentation up-text">Hello!</h1>
-          <h2 class="presentation static-text">I am a</h2>
+          <h2 class="presentation static-text">i'm a</h2>
           <h2 id="changingText" class="centered-text changing-text">desarrollador</h2>
         </div>
       </section>
@@ -88,9 +89,12 @@
                 <div class="cv-info">
                   <h1>Developer and Web Designer</h1>
                   <p>
-                    Hey there! I'm thrilled to connect with you. Freelancing has been my way of life, allowing me to embrace new challenges while savoring the freedom it brings. Whether you're looking for a dedicated programmer
-                     or just want to chat tech over a cup of virtual coffee, feel free to give me a shout. 
-                     Oh, and did I mention I'm just a call or message away? Yep, you got it—reach me at 55 4647 6943. Let's embark on a coding adventure together!
+                    Hey there! I'm thrilled to connect with you. Freelancing has been my way of life, allowing me to
+                    embrace new challenges while savoring the freedom it brings. Whether you're looking for a dedicated
+                    programmer
+                    or just want to chat tech over a cup of virtual coffee, feel free to give me a shout.
+                    Oh, and did I mention I'm just a call or message away? Yep, you got it—reach me at 55 4647 6943.
+                    Let's embark on a coding adventure together!
                   </p>
                   <div class="row">
                     <div class="col-lg-6">
@@ -116,12 +120,17 @@
                       </ul>
                     </div>
                   </div>
-                  <p>Thanks for dropping by! This space is more than just a static portfolio—it's a dynamic hub of innovation. 
-                    I'm committed to keeping this website updated with my latest feats, insights, and groundbreaking projects.
-                     If you're searching for a passionate programmer to breathe life into your ideas or to collaborate on an exciting
-                      project, you've found the right place. Let's not just code, let's craft digital experiences that leave a mark.
-                       Don't hesitate to reach out through the contact form or shoot me a message at maarco.app98@gmail.com. 
-                       The future of tech awaits, and I'm ready to dive in, one pixel at a time.</p>
+                  <p>Thanks for dropping by! This space is more than just a static portfolio—it's a dynamic hub of
+                    innovation.
+                    I'm committed to keeping this website updated with my latest feats, insights, and groundbreaking
+                    projects.
+                    If you're searching for a passionate programmer to breathe life into your ideas or to collaborate on
+                    an exciting
+                    project, you've found the right place. Let's not just code, let's craft digital experiences that
+                    leave a mark.
+                    Don't hesitate to reach out through the contact form or shoot me a message at
+                    maarco.app98@gmail.com.
+                    The future of tech awaits, and I'm ready to dive in, one pixel at a time.</p>
                 </div>
               </div>
             </div>
@@ -198,7 +207,7 @@
               </div>
 
             </div>
-            <p>In my collaborative endeavors, teamwork takes center stage. With a proven track record of working
+            <p class="bottom-parr">In my collaborative endeavors, teamwork takes center stage. With a proven track record of working
               harmoniously
               with partners, I've employed Agile methodologies to efficiently allocate tasks and employ version control
               using Git.
@@ -280,15 +289,16 @@
           <div class="content-placeholder">
             <div class="container">
               <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                   <h2 class="portfolio-title">Portfolio</h2>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-12 col-sm-12">
                   <div class="card">
                     <img src="images/logo_horizontal.png" style="width: 250px;">
                     <div class="card__content">
                       <p class="card__title">Vingolingo</p>
-                      <p class="card__description">e-commerce created intirely in django, using models lib to handle a sqlite:dev postgresql:prod , django templates and mercadopago payment manager.</p>
+                      <p class="card__description">e-commerce created intirely in django, using models lib to handle a
+                        sqlite:dev postgresql:prod , django templates and mercadopago payment manager.</p>
                       <button class="card__button">Website</button>
                       <button class="card__button secondary">Source Code</button>
                     </div>
@@ -297,7 +307,8 @@
                     <img src="images/medicallogo.png" alt="" class="portfolio-img">
                     <div class="card__content">
                       <p class="card__title">Medical bussines app web</p>
-                      <p class="card__description">App web focus on managing client-service action on medical companies. Manage a NoSql db and handle appointments with patients.</p>
+                      <p class="card__description">App web focus on managing client-service action on medical companies.
+                        Manage a NoSql db and handle appointments with patients.</p>
                       <button class="card__button">Live Demo</button>
                       <button class="card__button secondary">Source Code</button>
                     </div>
@@ -308,7 +319,8 @@
                     <img src="images/logo_infinity.png" class="portfolio-img">
                     <div class="card__content">
                       <p class="card__title">DBank Project</p>
-                      <p class="card__description">Web3 app created with a React Front and managed byDIntenert back-end codding on Motoko language.</p>
+                      <p class="card__description">Web3 app created with a React Front and managed byDIntenert back-end
+                        codding on Motoko language.</p>
                       <button class="card__button">Live Demo</button>
                       <button class="card__button secondary">Source Code</button>
                     </div>
@@ -317,7 +329,8 @@
                     <img src="images/default-monochrome-black.svg" class="portfolio-img">
                     <div class="card__content">
                       <p class="card__title">Rama</p>
-                      <p class="card__description">Website app created with a Node REST API and a React front end, handle events with clients with google calendars api.</p>
+                      <p class="card__description">Website app created with a Node REST API and a React front end,
+                        handle events with clients with google calendars api.</p>
                       <button class="card__button">Live Demo</button>
                       <button class="card__button secondary">Source Code</button>
                     </div>
